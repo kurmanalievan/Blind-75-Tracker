@@ -13,12 +13,8 @@ function Solution({name}){
 }
 
 function Problem({value, handleSolvedData, showSolution, handleClick}){
-  // const [showSolution, setShowSolution] = useState(false)
   const [first, setFirst] = useState(true) 
 
-  // function handleClick(){
-  //   setShowSolution(!showSolution)
-  // }
   return(
     <div>
         <input className="problem-checkbox" type="checkbox" onChange={() => handleSolvedData({value})}></input>
