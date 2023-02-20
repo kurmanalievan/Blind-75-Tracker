@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(38, 50, 59);
+    /* box-shadow: 0px 2.9px 7.4px rgba(255,255,255,0.1); */
+}
+.navigation{
+    /* border-style: dashed;
+    border-color: blue; */
+    box-shadow: 0px 2.9px 7.4px rgba(255,255,255,0.1);
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.github{
+    display: flex;
+    max-width: 160px;
+    /* border-style: dashed;
+    border-color: aqua; */
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 50px;
+    font-size: 50px;
+    color:aliceblue;
+}
+.hero img{
+    /* border-style: dashed;
+    border-color: aquamarine; */
+    width: 400px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.hero h1{
+    padding-top: 20px;
+    text-align: center;
+    margin-left: 40px;
+    color:white;
+}
+
+.hero p{
+   text-align: center;
+   margin-left: 40;
+   color: rgb(220, 214, 214);
+}
+
+.footer{
+    height: 70px;
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    left:0;
+    width: 100%;
+
+}
+.footer-desc{
+    color:rgb(125, 121, 121);
+    opacity: 0.3;
+    text-align: left;
+    padding-top: 30px;
+}
+.table {
+    padding-top: 80px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.table, td,th{
+    border: 1px solid;
+    border-color: rgb(50, 57, 63);
+    height: 40px;
+}
+
+.table-name{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(155, 169, 213);
+}
+
+.body-div{
+    margin-top: 60px;
+    margin-left: 40px;
+    /* background-color: rgb(0, 0, 0); */
+}
+
+.about{
+    background: none;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+.navigation li:hover{
+     background-color: #1c1a1a;
+  }
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+.table-name{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 40px;
+}
+
+.table-title{
+    font-size: 30px;
+}
+
+.btn-solution{
+    position: absolute;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    align-items: right;
+    /* margin-left: 20px; */
+}
+
+.solution-form{
+    background-color: rgb(236, 233, 233);
+}
+
+.problem-checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.results-form{
+    height: 100px;
+    width: 200px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 30px;
+   
+}
