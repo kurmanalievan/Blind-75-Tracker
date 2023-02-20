@@ -13,9 +13,6 @@ function Navigation(){
         <li>
             <a href='./questions'>Questions</a>
         </li>
-        {/* <li>
-            <a href='./solutions'>Solutions</a>
-        </li> */}
         {/* <CustomLink to="/questions">Questions</CustomLink>
         <CustomLink to="/about">About</CustomLink> */}
         <li>
