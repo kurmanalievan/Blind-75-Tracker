@@ -30,7 +30,7 @@ function Problem({value, handleSolvedData, showSolution, handleClick}){
 function NumberOfSolved({solveddata}){
    return(
     <form className="results-form">
-      <h1>{solveddata}</h1>
+      <h3>{solveddata}/74</h3>
     </form>
    )
 }

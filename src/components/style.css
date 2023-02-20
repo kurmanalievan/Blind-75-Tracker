@@ -158,5 +158,8 @@ body{
     border-radius: 5px;
     margin-left: 30px;
     margin-top: 30px;
-   
+}
+.solved-number{
+    border-style: dashed;
+    border-color: #1c1a1a;
 }
