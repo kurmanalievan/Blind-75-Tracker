@@ -2,6 +2,7 @@ import React from 'react'
 import {data} from '../Data'
 import {useState} from 'react'
 import SolutionForm from './SolutionForm'
+import {FaExternalLinkAlt} from 'react-icons/fa'
 
 var copy = []
 function Solution({name}){
@@ -12,13 +13,15 @@ function Solution({name}){
   )
 }
 
-function Problem({value, handleSolvedData, showSolution, handleClick}){
-  const [first, setFirst] = useState(true) 
-
+function Problem({value,handleSolvedData}){
+  const [showSolution, setShowSolution] = useState(false)
+  function handleClick(){
+    setShowSolution(!showSolution)
+  }
   return(
     <div>
         <input className="problem-checkbox" type="checkbox" onChange={() => handleSolvedData({value})}></input>
-       <a className="link"href={value.link}>{value.name}</a>
+       <a className="link"href={value.link}>{value.name}  <FaExternalLinkAlt className='link-icon' /></a>
        <button className="btn-solution"onClick={handleClick} style={
         {backgroundColor: showSolution ? 'red' : "green"}}>
           {showSolution ? 'Close' : 'Solution'}</button>
@@ -30,7 +33,7 @@ function Problem({value, handleSolvedData, showSolution, handleClick}){
 function NumberOfSolved({solveddata}){
    return(
     <form className="results-form">
-      <h3>{solveddata}/74</h3>
+      <h2>Solved: <h3>{solveddata}/74</h3></h2>
     </form>
    )
 }
@@ -48,24 +51,19 @@ function Body(){
       console.log(solveddata)
   }
 
-  function handleClick(){
-    setShowSolution(!showSolution)
-  }
-
-
     return(
         <div className="body-div">
             <NumberOfSolved solveddata={solveddata}/>
              <table className="table">
-               <thead className="table-name">This is the list of questions</thead>
+               <thead className="table-name"><h3>This is the list of questions</h3></thead>
                <tr className="table-title">
-                <th>Question</th>
+                <th>Arrays</th>
                </tr>
                {data.map((val, key) => {
                 return(
                   <tr>
                     <td >
-                      <Problem value={val} showSolution={showSolution} handleClick={handleClick} handleSolvedData={() => handleSolvedData(val)}/>
+                      <Problem value={val}  handleSolvedData={() => handleSolvedData(val)}/>
                       </td>
                  </tr>
                 )
