@@ -37,6 +37,18 @@ function NumberOfSolved({solveddata}){
     </form>
    )
 }
+
+function Section({types, type, distribute}){
+  return(
+    <>
+    {types.forEach(elem =>{
+      distribute(type)
+    })}
+    </>
+  )
+}
+
+
 function Body(){
     const [solveddata, setSolveddata] = useState(0)
     const [showSolution, setShowSolution] = useState(false)
@@ -48,24 +60,33 @@ function Body(){
       }
       var cnt = data.filter(el => el.solved)
       setSolveddata(cnt.length)
-      console.log(solveddata)
    }
-
+   const types = ["array", "binary", "dp", "graph", "Interval", "Linked List", "Matrix", "String", "Tree", "Heap"]
     function distribute(type) {
-      return (data.map((val) => {
-        if(val.type === type){     
-          console.log(val.name)      
+      return (
+        data.map((val) => {
+        if(val.type === type){       
          return(
+          <>
+           {/* <tr className="table-title">
+              <th>{type}</th>
+            </tr> */}
           <tr>
             <td >
               <Problem value={val}  handleSolvedData={() => handleSolvedData(val)}/>
               </td>
-         </tr>
+          </tr></>
         )}
        })
       )
     }
-
+  //  function putSection(){
+  //   return(
+  //     types.forEach(elem => {
+  //       distribute(elem)
+  //     })
+  //   )
+  //  }
     return(
         <div className="body-div">
             <NumberOfSolved solveddata={solveddata}/>
