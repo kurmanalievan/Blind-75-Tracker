@@ -1,10 +1,7 @@
 body{
     background-color: rgb(38, 50, 59);
-    /* box-shadow: 0px 2.9px 7.4px rgba(255,255,255,0.1); */
 }
 .navigation{
-    /* border-style: dashed;
-    border-color: blue; */
     box-shadow: 0px 2.9px 7.4px rgba(255,255,255,0.1);
     background-color: black;
     opacity: 0.5;
@@ -18,8 +15,6 @@ body{
 .github{
     display: flex;
     max-width: 160px;
-    /* border-style: dashed;
-    border-color: aqua; */
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -28,8 +23,6 @@ body{
     color:aliceblue;
 }
 .hero img{
-    /* border-style: dashed;
-    border-color: aquamarine; */
     width: 400px;
     display:block;
     margin-left: auto;
@@ -171,5 +164,5 @@ body{
     border-color: #1c1a1a;
 }
 .link-icon{
-    color: rgb(255, 255, 255);
+    color: orange;
 }

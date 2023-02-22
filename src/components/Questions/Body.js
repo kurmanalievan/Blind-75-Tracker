@@ -21,7 +21,7 @@ function Problem({value,handleSolvedData}){
   return(
     <div>
         <input className="problem-checkbox" type="checkbox" onChange={() => handleSolvedData({value})}></input>
-       <a className="link"href={value.link}>{value.name}  <FaExternalLinkAlt className='link-icon' /></a>
+       <a className="link" title="Go to LeetCode" target="_blank" href={value.link}>{value.name}  <FaExternalLinkAlt className='link-icon' /></a>
        <button className="btn-solution"onClick={handleClick} style={
         {backgroundColor: showSolution ? 'red' : "green"}}>
           {showSolution ? 'Close' : 'Solution'}</button>
@@ -49,7 +49,22 @@ function Body(){
       var cnt = data.filter(el => el.solved)
       setSolveddata(cnt.length)
       console.log(solveddata)
-  }
+   }
+
+    function distribute(type) {
+      return (data.map((val) => {
+        if(val.type === type){     
+          console.log(val.name)      
+         return(
+          <tr>
+            <td >
+              <Problem value={val}  handleSolvedData={() => handleSolvedData(val)}/>
+              </td>
+         </tr>
+        )}
+       })
+      )
+    }
 
     return(
         <div className="body-div">
@@ -59,16 +74,43 @@ function Body(){
                <tr className="table-title">
                 <th>Arrays</th>
                </tr>
-               {data.map((val, key) => {
-                return(
-                  <tr>
-                    <td >
-                      <Problem value={val}  handleSolvedData={() => handleSolvedData(val)}/>
-                      </td>
-                 </tr>
-                )
-               })
-               }
+               {distribute("array")}
+               <tr className="table-title">
+                <th>Binary</th>
+               </tr>
+               {distribute("binary")}
+               <tr className="table-title">
+                <th>Dynamic Programming</th>
+               </tr>
+               {distribute("dp")}
+               <tr className="table-title">
+                <th>Graph</th>
+               </tr>
+               {distribute("graph")}
+               <tr className="table-title">
+                <th>Interval</th>
+               </tr>
+               {distribute("interval")}
+               <tr className="table-title">
+                <th>Linked List</th>
+               </tr>
+               {distribute("linkedlist")}
+               <tr className="table-title">
+                <th>Matrix</th>
+               </tr>
+               {distribute("matrix")}
+               <tr className="table-title">
+                <th>String</th>
+               </tr>
+               {distribute("string")}
+               <tr className="table-title">
+                <th>Tree</th>
+               </tr>
+               {distribute("tree")}
+               <tr className="table-title">
+                <th>Heap</th>
+               </tr>
+               {distribute("heap")}
              </table>
         </div>
     )
