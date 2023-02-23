@@ -95,43 +95,43 @@ function Body(){
                <tr className="table-title">
                 <th>Arrays</th>
                </tr>
-               {distribute("array")}
+               {distribute("Array")}
                <tr className="table-title">
                 <th>Binary</th>
                </tr>
-               {distribute("binary")}
+               {distribute("Binary")}
                <tr className="table-title">
                 <th>Dynamic Programming</th>
                </tr>
-               {distribute("dp")}
+               {distribute("Dynamic Programming")}
                <tr className="table-title">
                 <th>Graph</th>
                </tr>
-               {distribute("graph")}
+               {distribute("Graph")}
                <tr className="table-title">
                 <th>Interval</th>
                </tr>
-               {distribute("interval")}
+               {distribute("Interval")}
                <tr className="table-title">
                 <th>Linked List</th>
                </tr>
-               {distribute("linkedlist")}
+               {distribute("Linked List")}
                <tr className="table-title">
                 <th>Matrix</th>
                </tr>
-               {distribute("matrix")}
+               {distribute("Matrix")}
                <tr className="table-title">
                 <th>String</th>
                </tr>
-               {distribute("string")}
+               {distribute("String")}
                <tr className="table-title">
                 <th>Tree</th>
                </tr>
-               {distribute("tree")}
+               {distribute("Tree")}
                <tr className="table-title">
                 <th>Heap</th>
                </tr>
-               {distribute("heap")}
+               {distribute("Heap")}
              </table>
         </div>
     )
