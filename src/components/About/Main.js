@@ -7,10 +7,11 @@ const Main = () => {
       <h3>Software Engineer</h3>
 
      <div>
-         <button className="btnEmail"type="button">Email</button>
+         <a href="mailto:kurmanalieva.nurs@gmail.com"><button className="btnEmail"type="button" >Email</button></a>
      </div>
      <div>
-         <button className="btnLinkedIn">LinkedIn</button>
+         <a href="https://www.linkedin.com/in/nursezim-kurmanalieva-5417a2206/"> <button className="btnLinkedIn">LinkedIn</button></a>
+         
      </div>
 
      <div className="about">

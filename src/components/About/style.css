@@ -5,6 +5,7 @@
     padding-left: auto;
     left: 116px;
     top: 40px;
+    margin-top: 10%;
     border-radius: 10px 10px 0px 0px;
     border-style: solid;
   }
@@ -12,12 +13,12 @@
   .container{
     position:absolute;
     width: 317px;
-    height: 399px;
+    height: 319px;
     left: 116px;
     top: 360px;
     background-color: #121525;;
     border-style: solid;
-    margin-top:0%;
+    margin-top:10%;
     /* box-shadow: 2px 2px rgb(172, 166, 166); */
     box-shadow: rgba(212, 217, 222, 0.2) 1px 8px 24px;
   }
