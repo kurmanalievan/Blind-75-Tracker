@@ -1,5 +1,5 @@
 export const data = [
-    {name: "Two Sum", solved: true, type: "Array", link: "https://leetcode.com/problems/two-sum/"},
+    {name: "Two Sum", solved: false, type: "Array", link: "https://leetcode.com/problems/two-sum/"},
     {name: "Best Time to Buy and Sell Stock", solved: false, type: "Array", link: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"},
     {name: "Contains Duplicate", solved: false, type: "Array", link: "https://leetcode.com/problems/contains-duplicate/"},
     {name: "Product of Array Except Self",solved: false,  type: "Array", link: "https://leetcode.com/problems/product-of-array-except-self/"},
@@ -84,10 +84,6 @@ export const data = [
     {name: "Merge K Sorted Lists", solved: false,type:"Heap",  link: "https://leetcode.com/problems/container-with-most-water/"},
     {name: "Top K Frequent Elements",solved: false,  type:"Heap", link: "https://leetcode.com/problems/search-in-rotated-sorted-array/"},
     {name: "Find Median from Data Stream", solved: false, type:"Heap",  link: "https://leetcode.com/problems/3sum/"},
-
-    
-
-    
 
 ]
 

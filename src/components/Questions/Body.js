@@ -1,10 +1,11 @@
 import React from 'react'
-import {data} from '../Data'
-import {useState} from 'react'
+// import {data} from '../Data'
+import {useState, useEffect} from 'react'
 import SolutionForm from './SolutionForm'
 import {FaExternalLinkAlt} from 'react-icons/fa'
+import { set } from 'react-ga'
 
-var copy = []
+
 function Solution({name}){
   return(
     <div className="solution">
@@ -38,20 +39,10 @@ function NumberOfSolved({solveddata}){
    )
 }
 
-function Section({types, type, distribute}){
-  return(
-    <>
-    {types.forEach(elem =>{
-      distribute(type)
-    })}
-    </>
-  )
-}
-
-
-function Body(){
+function Body({data}){
     const [solveddata, setSolveddata] = useState(0)
     const [showSolution, setShowSolution] = useState(false)
+
     function handleSolvedData(value){
       for(let i = 0;i < data.length; i++){
         if(data[i].name === value.name){
@@ -68,25 +59,15 @@ function Body(){
         if(val.type === type){       
          return(
           <>
-           {/* <tr className="table-title">
-              <th>{type}</th>
-            </tr> */}
           <tr>
             <td >
               <Problem value={val}  handleSolvedData={() => handleSolvedData(val)}/>
-              </td>
+            </td>
           </tr></>
         )}
        })
       )
     }
-  //  function putSection(){
-  //   return(
-  //     types.forEach(elem => {
-  //       distribute(elem)
-  //     })
-  //   )
-  //  }
     return(
         <div className="body-div">
             <NumberOfSolved solveddata={solveddata}/>
@@ -138,4 +119,3 @@ function Body(){
 }
 
 export default Body
-export {copy}

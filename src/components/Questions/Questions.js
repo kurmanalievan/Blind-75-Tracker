@@ -1,9 +1,9 @@
 import React from 'react'
 import Body from './Body'
-const Questions = () => {
+const Questions = ({data}) => {
   return (
     <div>
-      <Body />
+      <Body data={data}/>
     </div>
   )
 }
