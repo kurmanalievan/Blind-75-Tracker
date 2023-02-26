@@ -9,7 +9,16 @@ function NumberOfSolved({solveddata}){
     </form>
    )
 }
-
+function Print({type, func}){
+  return(
+    <>
+    <tr className="table-title">
+       <th>{type}</th>
+    </tr>
+    {func}
+    </>
+    ) 
+ }
 function Body({data}){
     const [solveddata, setSolveddata] = useState(0)
     const [showSolution, setShowSolution] = useState(false)
@@ -23,7 +32,6 @@ function Body({data}){
       var cnt = data.filter(el => el.solved)
       setSolveddata(cnt.length)
    }
-    const types = ["Array", "Binary", "Dynamic Programming", "Graph", "Interval", "Linked List", "Matrix", "String", "Tree", "Heap"]
     function distribute(type) {
       return (
         data.map((val) => {
@@ -39,51 +47,23 @@ function Body({data}){
        })
       )
     }
+   
     return(
         <div className="body-div">
             <NumberOfSolved solveddata={solveddata}/>
+      
              <table className="table">
                <thead className="table-name"><h3>This is the list of questions</h3></thead>
-               <tr className="table-title">
-                <th>Arrays</th>
-               </tr>
-               {distribute("Array")}
-               <tr className="table-title">
-                <th>Binary</th>
-               </tr>
-               {distribute("Binary")}
-               <tr className="table-title">
-                <th>Dynamic Programming</th>
-               </tr>
-               {distribute("Dynamic Programming")}
-               <tr className="table-title">
-                <th>Graph</th>
-               </tr>
-               {distribute("Graph")}
-               <tr className="table-title">
-                <th>Interval</th>
-               </tr>
-               {distribute("Interval")}
-               <tr className="table-title">
-                <th>Linked List</th>
-               </tr>
-               {distribute("Linked List")}
-               <tr className="table-title">
-                <th>Matrix</th>
-               </tr>
-               {distribute("Matrix")}
-               <tr className="table-title">
-                <th>String</th>
-               </tr>
-               {distribute("String")}
-               <tr className="table-title">
-                <th>Tree</th>
-               </tr>
-               {distribute("Tree")}
-               <tr className="table-title">
-                <th>Heap</th>
-               </tr>
-               {distribute("Heap")}
+                <Print type="Array" func={distribute("Array")}/>
+                <Print type="Binary" func={distribute("Binary")}/>
+                <Print type="Dynamic Programming" func={distribute("Dynamic Programming")}/>
+                <Print type="Graph" func={distribute("Graph")}/>
+                <Print type="Interval" func={distribute("Interval")}/>
+                <Print type="Linked List" func={distribute("Linked List")}/>
+                <Print type="Matrix" func={distribute("Matrix")}/>
+                <Print type="String" func={distribute("String")}/>
+                <Print type="Tree" func={distribute("Tree")}/>
+                <Print type="Heap" func={distribute("Heap")}/>
              </table>
         </div>
     )
