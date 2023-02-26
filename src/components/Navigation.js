@@ -12,7 +12,7 @@ function Navigation(){
         <CustomLink to="/questions">Questions</CustomLink>
         <CustomLink to="/about">About</CustomLink>
       </ul>
-        </div>
+    </div>
     )
 }
 

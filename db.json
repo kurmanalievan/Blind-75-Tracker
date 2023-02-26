@@ -7,22 +7,247 @@
       "link": "https://leetcode.com/problems/two-sum/"
     },
     {
-      "name": "Two Sum",
+      "name": "Best Time to Buy and Sell Stock",
       "solved": false,
       "type": "Array",
-      "link": "https://leetcode.com/problems/two-sum/"
+      "link": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
     },
     {
-      "name": "Two Sum",
+      "name": "Contains Duplicate",
       "solved": false,
       "type": "Array",
-      "link": "https://leetcode.com/problems/two-sum/"
+      "link": "https://leetcode.com/problems/contains-duplicate/"
     },
     {
-      "name": "Two Sum",
+      "name": "Product of Array Except Self",
       "solved": false,
       "type": "Array",
-      "link": "https://leetcode.com/problems/two-sum/"
+      "link": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "name": "Maximum Subarray",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/problems/maximum-subarray//"
+    },
+    {
+      "name": "Maximum Product Subarray",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/problems/maximum-product-subarray/"
+    },
+    {
+      "name": "Find Minimum in Rotated Sorted Array",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/find-minimum-in-rotated-sorted-array/"
+    },
+    {
+      "name": "Search in Rotated Sorted Array",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+    },
+    {
+      "name": "3 Sum",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "name": "Container With Most Water",
+      "solved": false,
+      "type": "Array",
+      "link": "https://leetcode.com/problems/container-with-most-water/"
+    },
+
+
+    {
+      "name": "Sum of Two Integers",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/problems/sum-of-two-integers/"
+    },
+    {
+      "name": "Number of 1 Bits",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/number-of-1-bits/"
+    },
+    {
+      "name": "Missing Number",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "name": "Maximum Product Subarray",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/maximum-product-subarray/"
+    },
+    {
+      "name": "Find Minimum in Rotated Sorted Array",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/find-minimum-in-rotated-sorted-array/"
+    },
+    {
+      "name": "Reverse Bits",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/reverse-bits/"
+    },
+
+    {
+      "name": "Climbing Stairs",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "name": "Coin Change",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/coin-change/"
+    },
+    {
+      "name": "Contains Duplicate",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+      "name": "Longest Increasing Subsequence",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/longest-increasing-subsequence/"
+    },
+    {
+      "name": "Longest Common Subsequence",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/longest-common-subsequence/"
+    },
+    {
+      "name": "Word Break",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/word-break/"
+    },
+    {
+      "name": "Combination Sum IV",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/combination-sum-iv/"
+    },
+    {
+      "name": "House Robber",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/house-robber/"
+    },
+    {
+      "name": "House Robber II",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/house-robber-ii/"
+    },
+    {
+      "name": "Decode Ways",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/decode-ways/"
+    },
+    {
+      "name": "Unique Paths",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/unique-paths/"
+    },
+    {
+      "name": "Jump Game",
+      "solved": false,
+      "type": "Dynamic Programming",
+      "link": "https://leetcode.com/problems/jump-game/"
+    },
+
+    
+    {
+      "name": "Clone Graph",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/clone-graph/"
+    },
+    {
+      "name": "Course Schedule",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/course-schedule/"
+    },
+    {
+      "name": "Pacific Atlantic Water Flow",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+    },
+    {
+      "name": "Number of Islands",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "name": "Longest Consecutive Sequence",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+      "name": "Alien Dictionary",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/alien-dictionary/"
+    },
+    {
+      "name": "Graph Valid Tree",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/graph-valid-tree/"
+    },
+    {
+      "name": "Number of Connected Components in an Undirected Graph",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+    },
+
+
+
+    {
+      "name": "Pacific Atlantic Water Flow",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+    },
+    {
+      "name": "Number of Islands",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "name": "Longest Consecutive Sequence",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/longest-consecutive-sequence/"
+    },
+    {
+      "name": "Alien Dictionary",
+      "solved": false,
+      "type": "Binary",
+      "link": "https://leetcode.com/problems/alien-dictionary/"
     }
+    
   ]
 }

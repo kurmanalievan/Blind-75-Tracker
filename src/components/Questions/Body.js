@@ -1,35 +1,6 @@
 import React from 'react'
-// import {data} from '../Data'
 import {useState, useEffect} from 'react'
-import SolutionForm from './SolutionForm'
-import {FaExternalLinkAlt} from 'react-icons/fa'
-import { set } from 'react-ga'
-
-
-function Solution({name}){
-  return(
-    <div className="solution">
-      <SolutionForm problem_name={name}/> 
-    </div>
-  )
-}
-
-function Problem({value,handleSolvedData}){
-  const [showSolution, setShowSolution] = useState(false)
-  function handleClick(){
-    setShowSolution(!showSolution)
-  }
-  return(
-    <div>
-        <input className="problem-checkbox" type="checkbox" onChange={() => handleSolvedData({value})}></input>
-       <a className="link" title="Go to LeetCode" target="_blank" href={value.link}>{value.name}  <FaExternalLinkAlt className='link-icon' /></a>
-       <button className="btn-solution"onClick={handleClick} style={
-        {backgroundColor: showSolution ? 'red' : "green"}}>
-          {showSolution ? 'Close' : 'Solution'}</button>
-          {showSolution && <Solution name={value.name}/>}
-    </div>
-  )
-}
+import Problem from './Problem'
 
 function NumberOfSolved({solveddata}){
    return(
@@ -52,7 +23,7 @@ function Body({data}){
       var cnt = data.filter(el => el.solved)
       setSolveddata(cnt.length)
    }
-   const types = ["array", "binary", "dp", "graph", "Interval", "Linked List", "Matrix", "String", "Tree", "Heap"]
+    const types = ["Array", "Binary", "Dynamic Programming", "Graph", "Interval", "Linked List", "Matrix", "String", "Tree", "Heap"]
     function distribute(type) {
       return (
         data.map((val) => {
