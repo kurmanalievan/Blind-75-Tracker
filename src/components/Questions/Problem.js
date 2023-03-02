@@ -3,6 +3,7 @@ import SolutionForm from './SolutionForm'
 import {FaExternalLinkAlt} from 'react-icons/fa'
 import {useState} from 'react'
 
+const arr = []
 function Solution({name}){
     return(
       <div className="solution">

@@ -1,8 +1,11 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import {sol_list} from './SolutionsList'
+import {plist} from './SolutionsList'
+
 const SolutionForm = ({problem_name}) => {
-  const input = sol_list.filter(el => el.name == problem_name)
+  const input = plist.filter(el => el.name == problem_name)
+  console.log(input)
+
   return (
     <form className='solution-form'>
       <ReactMarkdown>{input[0].solution}</ReactMarkdown>
